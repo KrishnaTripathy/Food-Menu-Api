@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Food Search</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img src="img/logo.svg" class="d-block mx-auto my-4" alt="Logo" />
+          <form id="searchForm" class="my-4">
+            <!-- Input group -->
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control text-capitalize"
+                id="searchFood"
+                placeholder="Enter food name..."
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-danger text-capitalize search-btn btn " id = "search-btn">
+                  <i class = "fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <!-- End of input group -->
+
+            <!-- Feedback Message -->
+            <div class="feedback alert alert-danger text-center text-capitalize d-none">
+              Please enter a food name
+            </div>
+          </form>
+
+          <!-- Preloader -->
+          <img src="img/loader.gif" class="loader d-none" alt="Loading..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurant Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row" id="restaurant-list">
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Script JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
